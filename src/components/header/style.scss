@@ -1,0 +1,54 @@
+
+/* header */
+.header { position:fixed; top:0; right:0; left:0; width:100%; padding:40px 0;text-align: center; z-index: 500;}
+.header.scroll {background:#051e2d;/* padding:30px 0 */}
+
+.header .gnb li { display:inline-block; vertical-align: middle;}
+.header .gnb li + li { margin-left:120px;}
+.header .gnb li + li.gnb_main {margin-left:0}
+.header .gnb li a {  display:block;text-transform: uppercase;}
+.header .gnb li a span {color:#fff; font-size:22px;  line-height: 1em;letter-spacing: 2px;}
+.header .gnb li a:hover span{ color:#f2a900; }
+.header .gnb li.active a span{ color:#f2a900;/*background-size:100% auto;*//* background-size:100% 5px*/ }
+
+.header .top_logo { position:fixed; top:24px; left:30px; opacity: 1; display: block}
+
+
+/* floating_box */
+.floating_box { position:fixed; right:60px; top:50%; margin-top:-130px; width:58px; z-index: 500;}
+.floating_box li + li {margin-top:10px;}
+.floating_box li a.sns_navergame,
+.floating_box li a.sns_vk {display: none;}
+.floating_box li a { width:58px; height:58px; display: block; background:url(https://newstate.gabia.io/asset/img/btn_sns.png) no-repeat}
+.floating_box li a.sns_facebook { background-position: 0 -68px; }
+.floating_box li a.sns_twitter { background-position: 0 -134px; }
+.floating_box li a.sns_youtube { background-position: 0 -202px; }
+.floating_box li a.sns_insta { background-position: 0 bottom; }
+.floating_box li a.sns_vk:hover { background-position: right 0; }
+.floating_box li a.sns_facebook:hover { background-position: right -68px ; }
+.floating_box li a.sns_twitter:hover { background-position:right -134px ; }
+.floating_box li a.sns_youtube:hover { background-position:right -202px ; }
+.floating_box li a.sns_insta:hover { background-position:right bottom ; }
+
+.floating_box li a.sns_navergame {background:url(https://newstate.gabia.io/asset/img/btn_sns_navergame.png) left center no-repeat}
+.floating_box li a.sns_navergame:hover { background-position: right center; }
+
+/* header_right_box */
+.header_right_box { position:fixed; right:60px; top:38px; z-index: 600;}
+/*.header_right_box.scroll { top:28px;}*/
+.header_right_box > a {display:inline-block; vertical-align: middle; width:25px; height:25px; position:relative; opacity: 0.7;}
+.header_right_box > a.active {opacity: 1;}
+.header_right_box > a + a {margin-left:52px}
+.header_right_box > a + a::before { content:""; width:1px; height:16px; display:block; background:#fff; opacity: 0.2; position:absolute; top:50%; margin-top:-8px; left:-25px;}
+.header_right_box > a span{ display:block;width:25px; height:25px;}
+.header_right_box .btn_share span { background:url(https://newstate.gabia.io/asset/img/ic_share.png) no-repeat }
+.header_right_box .btn_lang span { background:url(https://newstate.gabia.io/asset/img/ic_language.png) no-repeat }
+.header_right_box .lang_list { min-width:170px;  position:absolute; top:45px; right:0; background:#050d1b;  max-height: 85vh; overflow-y: auto;padding:8px 0;border:1px solid #2b3953; display:none; opacity: 0;}
+
+.header_right_box .lang_list ul li {text-align:left;}
+.header_right_box .lang_list ul li a {color:#fff;padding:6px 10px; font-size:16px; display:block;font-family: 'Teko', sans-serif!important; letter-spacing: 0;}
+
+
+.header_right_box .lang_list ul li.active a{ background:#133b3d}
+
+.header_right_box .lang_list.active { display:block; opacity: 1; }
